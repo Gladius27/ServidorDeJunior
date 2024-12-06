@@ -23,23 +23,26 @@
 
         <div class="buttons-container">
             <a href="https://discord.gg/NzkFRMDBDG" class="button" target="_blank">Discord</a>
-             <a href="https://is.gd/mIbIDJ" class="button" target="_blank">Generador Roblox.com.zm</a>
+            <a href="https://is.gd/mIbIDJ" class="button" target="_blank">Generador Roblox.com.zm</a>
             <a href="https://is.gd/lMO9Hc" class="button" target="_blank">Generator Roblox.com.py</a>
             <a href="https://www.roblox.tl/generator/Caos_societi/auth" class="button" target="_blank">MultiGenerador (Recomendable)</a>
         </div>
-        
-         <script>
-        document.getElementById('playAudio').addEventListener('click', function() {
-            const audio = document.getElementById('backgroundMusic');
-            audio.play();
-            this.style.display = 'none'; // Oculta el botón después de iniciar la música
-        });
-    </script>
-        
+
         <footer>
             <p>&copy; 2024 junior17577. Solo porque no me gusta matar, no significa que no lo disfrute.</p>
         </footer>
     </div>
+
+    <script>
+        document.getElementById('playAudio').addEventListener('click', function () {
+            const audio = document.getElementById('backgroundMusic');
+            audio.play(); // Reproducir la música
+            this.style.opacity = '0'; // Hace que el botón desaparezca suavemente
+            setTimeout(() => {
+                this.style.display = 'none'; // Elimina el botón del flujo después de desaparecer
+            }, 300); // Espera 300ms para que la transición termine
+        });
+    </script>
 </body>
 </html>
 
